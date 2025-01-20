@@ -1284,144 +1284,144 @@ About Page Style
   color: #22b3c1;
 }
 
+/* 
+---------------------------------------------
+Weekly Offers Style (CSS Grid)
+--------------------------------------------- 
+*/
+
 .weekly-offers {
   padding-bottom: 120px;
   margin-top: 120px;
   border-bottom: 1px solid #eee;
 }
 
-.weekly-offers .container-fluid {
-  padding: 0px 80px;
+.weekly-offers .container {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.weekly-offers .item {
-  margin: 0px 15px;
-  position: relative;
-  min-height: 420px;
+.weekly-offers .offer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+  gap: 30px; /* Space between cards */
 }
 
-.weekly-offers .item .thumb img {
-  padding-right: 160px;
-  border-radius: 23px;
-}
-
-.weekly-offers .item .thumb .text {
-  position: absolute;
-  background-color: #fff;
-  border-radius: 23px;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  box-shadow: 0px 0px 15px rgba(0,0,0,0.15);
+.weekly-offers .offer-item {
+  background: #fff;
+  border-radius: 15px;
   padding: 30px;
-}
-
-.weekly-offers .item .thumb .text h4 {
-  font-size: 20px;
-  display: inline-block;
-}
-
-.header-area .main-nav .nav {
-  flex-basis: 70%;
-  justify-content: flex-end;
-  vertical-align: middle;
-  margin-top: 15px;
-  margin-right: 0px;
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-  position: relative;
-  z-index: 999;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
   display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Distribute content evenly */
 }
 
-.weekly-offers .item .thumb .text h4 span,
-.weekly-offers .item .thumb .text h6 span {
-  font-size: 15px;
-  color: #afafaf;
-  font-weight: 400;
+.weekly-offers .offer-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.weekly-offers .item .thumb .text ul {
-  border-top: 1px solid #eee;
-  margin-top: 25px;
-  padding-top: 25px;
+.weekly-offers .offer-icon {
+  font-size: 40px;
+  color: #22b3c1;
+  margin-bottom: 20px;
 }
 
-.weekly-offers .item .thumb .text ul li {
-  color: #afafaf;
-  font-size: 14px;
+.weekly-offers .offer-item h4 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #2a2a2a;
   margin-bottom: 10px;
 }
 
-.weekly-offers .item .thumb .text ul li:first-child {
+.weekly-offers .offer-item h6 {
+  font-size: 18px;
+  color: #22b3c1;
+  margin-bottom: 15px;
+}
+
+.weekly-offers .offer-item p {
+  font-size: 20px;
   color: #2a2a2a;
+  margin-bottom: 20px;
+}
+
+.weekly-offers .offer-item p span {
+  font-size: 14px;
+  color: #afafaf;
+}
+
+.weekly-offers .offer-item ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+  flex-grow: 1; /* Allow the list to grow and fill space */
+}
+
+.weekly-offers .offer-item ul li {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.weekly-offers .offer-item ul li i {
+  color: #22b3c1;
+  margin-right: 10px;
+}
+
+.weekly-offers .main-button {
+  margin-top: 20px;
+}
+
+.weekly-offers .main-button a {
+  background-color: #22b3c1;
+  color: #fff;
+  border: 1px solid #22b3c1;
+  padding: 12px 30px;
+  border-radius: 25px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.weekly-offers .main-button a:hover {
+  background-color: #1ea0ad;
+  border-color: #1ea0ad;
+}.video-section {
+  padding: 60px 0;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.video-section h2 {
+  margin-bottom: 30px;
+  font-size: 2.5em;
+  color: #333;
   font-weight: 600;
 }
 
-.weekly-offers .item .thumb .text .main-button {
-  margin-top: 30px;
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  margin: 0 auto;
+  background: #000;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.weekly-offers .item .thumb .text .main-button a:hover {
-  background-color: #22b3c1;
-  border-color: #22b3c1;
-  color: #fff;
-  opacity: 0.85;
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
 }
-
-.weekly-offers .owl-nav {
-  text-align: center;
-  margin-top: 30px;
-}
-
-.weekly-offers .owl-nav .owl-next span {
-  display: none;
-}
-
-.weekly-offers .owl-nav .owl-next::after {
-  font-family: "FontAwesome";
-  content: '\f061'; 
-  color: #22b3c1;
-  font-size: 20px;
-  width: 46px;
-  height: 46px;
-  text-align: center;
-  border: 1px solid #22b3c1;
-  display: inline-block;
-  line-height: 44px;
-  border-radius: 50%;
-  transition: all .3s;
-  margin-left: 5px;
-}
-
-.weekly-offers .owl-nav .owl-prev span {
-  display: none;
-}
-
-.weekly-offers .owl-nav .owl-prev::after {
-  font-family: "FontAwesome";
-  content: '\f060'; 
-  color: #22b3c1;
-  font-size: 20px;
-  width: 46px;
-  height: 46px;
-  text-align: center;
-  border: 1px solid #22b3c1;
-  display: inline-block;
-  line-height: 44px;
-  border-radius: 50%;
-  transition: all .3s;
-  margin-right: 5px;
-}
-
-.weekly-offers .owl-nav .owl-prev:hover::after,
-.weekly-offers .owl-nav .owl-next:hover::after {
-  color: #fff;
-  background-color: #22b3c1;
-}
-
 .more-about {
   margin-top: 120px;
   padding-bottom: 120px;
