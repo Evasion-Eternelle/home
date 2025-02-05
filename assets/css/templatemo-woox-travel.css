@@ -1,5 +1,5 @@
 */
-t/* ---------------------------------------------
+/* ---------------------------------------------
 Table of contents
 ------------------------------------------------
 01. font & reset css
@@ -20,11 +20,6 @@ font & reset css
 */
 /* Import Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900");
-/* 
----------------------------------------------
-reset
---------------------------------------------- 
-*/
 /* 
 ---------------------------------------------
 reset
@@ -1126,9 +1121,126 @@ footer p a:hover {
   opacity: 0.75;
 }
 
+/* 
+---------------------------------------------
+Circuits Section Style
+--------------------------------------------- 
+*/
 
+.amazing-circuits {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+}
+
+.amazing-circuits .section-heading {
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.amazing-circuits .section-heading h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #2a2a2a;
+    margin-bottom: 20px;
+}
+
+.amazing-circuits .section-heading p {
+    font-size: 18px;
+    color: #6c6c6c;
+    margin-bottom: 40px;
+}
+
+/* Circuit Item Styling */
+.circuit-item {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+}
+
+.circuit-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.circuit-item h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #2a2a2a;
+    margin-bottom: 15px;
+}
+
+.circuit-item p {
+    font-size: 16px;
+    color: #6c6c6c;
+    margin-bottom: 10px;
+}
+
+.circuit-item p strong {
+    color: #2a2a2a;
+}
+
+.circuit-item .border-button {
+    margin-top: 20px;
+}
+
+.circuit-item .border-button a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff4a52;
+    color: #ffffff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.circuit-item .border-button a:hover {
+    background-color: #ff2a2a;
+}
+
+/* Responsive Design for Circuits Section */
+@media (max-width: 767px) {
+    .amazing-circuits .section-heading h2 {
+        font-size: 28px;
+    }
+
+    .amazing-circuits .section-heading p {
+        font-size: 16px;
+    }
+
+    .circuit-item {
+        padding: 20px;
+    }
+
+    .circuit-item h3 {
+        font-size: 20px;
+    }
+
+    .circuit-item p {
+        font-size: 14px;
+    }
+
+    .circuit-item .border-button a {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
 
 /* 
+---------------------------------------------
+Responsive Style
+--------------------------------------------- 
+*/
+
+body {
+  overflow-x: hidden;
+}
+
+@media (max-width: 575px) {
+} 
 ---------------------------------------------
 About Page Style
 --------------------------------------------- 
