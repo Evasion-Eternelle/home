@@ -1123,7 +1123,7 @@ footer p a:hover {
 
 /* 
 ---------------------------------------------
-Circuits Section Style
+Circuits Section Style - With Additional Details
 --------------------------------------------- 
 */
 
@@ -1182,6 +1182,48 @@ Circuits Section Style
     color: #2a2a2a;
 }
 
+/* Additional Details Styling */
+.circuit-details {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+}
+
+.circuit-details h4 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #2a2a2a;
+    margin-bottom: 15px;
+}
+
+.circuit-details ul {
+    list-style: none;
+    padding: 0;
+}
+
+.circuit-details ul li {
+    font-size: 14px;
+    color: #6c6c6c;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.circuit-details ul li::before {
+    content: "•";
+    color: #22b3c1;
+    font-size: 18px;
+    position: absolute;
+    left: 0;
+    top: -2px;
+}
+
+.circuit-details ul li strong {
+    color: #2a2a2a;
+}
+
+/* Button Styling */
 .circuit-item .border-button {
     margin-top: 20px;
 }
@@ -1221,6 +1263,18 @@ Circuits Section Style
 
     .circuit-item p {
         font-size: 14px;
+    }
+
+    .circuit-details {
+        padding: 15px;
+    }
+
+    .circuit-details h4 {
+        font-size: 18px;
+    }
+
+    .circuit-details ul li {
+        font-size: 13px;
     }
 
     .circuit-item .border-button a {
