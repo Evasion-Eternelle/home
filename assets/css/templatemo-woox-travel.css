@@ -1123,134 +1123,113 @@ footer p a:hover {
 
 /* 
 ---------------------------------------------
-Circuits Section Style - Card with Image
+Circuits Section Style
 --------------------------------------------- 
 */
 
 .amazing-circuits {
-  padding: 60px 0;
-  background-color: #f9f9f9;
+    padding: 60px 0;
+    background-color: #f9f9f9;
 }
 
 .amazing-circuits .section-heading {
-  margin-bottom: 60px;
-  text-align: center;
+    margin-bottom: 60px;
+    text-align: center;
 }
 
 .amazing-circuits .section-heading h2 {
-  font-size: 36px;
-  font-weight: 700;
-  color: #2a2a2a;
-  margin-bottom: 20px;
+    font-size: 36px;
+    font-weight: 700;
+    color: #2a2a2a;
+    margin-bottom: 20px;
 }
 
 .amazing-circuits .section-heading p {
-  font-size: 18px;
-  color: #6c6c6c;
-  margin-bottom: 40px;
+    font-size: 18px;
+    color: #6c6c6c;
+    margin-bottom: 40px;
 }
 
-/* Circuit Item with Image */
+/* Circuit Item Styling */
 .circuit-item {
-  position: relative;
-  background-color: #ffffff;
-  border-radius: 15px;
-  overflow: hidden;
-  margin-bottom: 30px;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
 }
 
-.circuit-item img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-}
-
-.circuit-item .content {
-  padding: 20px;
+.circuit-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 .circuit-item h3 {
-  font-size: 24px;
-  font-weight: 600;
-  color: #2a2a2a;
-  margin-bottom: 15px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #2a2a2a;
+    margin-bottom: 15px;
 }
 
 .circuit-item p {
-  font-size: 16px;
-  color: #6c6c6c;
-  margin-bottom: 10px;
+    font-size: 16px;
+    color: #6c6c6c;
+    margin-bottom: 10px;
 }
 
 .circuit-item p strong {
-  color: #2a2a2a;
+    color: #2a2a2a;
 }
 
-.circuit-item .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(34, 179, 193, 0.8);
-  color: #ffffff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  border-radius: 15px;
+.circuit-item .border-button {
+    margin-top: 20px;
 }
 
-.circuit-item:hover .overlay {
-  opacity: 1;
+.circuit-item .border-button a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff4a52;
+    color: #ffffff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
 }
 
-.circuit-item .overlay .border-button a {
-  background-color: #ffffff;
-  color: #22b3c1;
-  padding: 10px 20px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: background-color 0.3s ease;
-}
-
-.circuit-item .overlay .border-button a:hover {
-  background-color: #f0f0f0;
+.circuit-item .border-button a:hover {
+    background-color: #ff2a2a;
 }
 
 /* Responsive Design for Circuits Section */
 @media (max-width: 767px) {
-  .amazing-circuits .section-heading h2 {
-      font-size: 28px;
-  }
+    .amazing-circuits .section-heading h2 {
+        font-size: 28px;
+    }
 
-  .amazing-circuits .section-heading p {
-      font-size: 16px;
-  }
+    .amazing-circuits .section-heading p {
+        font-size: 16px;
+    }
 
-  .circuit-item {
-      padding: 20px;
-  }
+    .circuit-item {
+        padding: 20px;
+    }
 
-  .circuit-item h3 {
-      font-size: 20px;
-  }
+    .circuit-item h3 {
+        font-size: 20px;
+    }
 
-  .circuit-item p {
-      font-size: 14px;
-  }
+    .circuit-item p {
+        font-size: 14px;
+    }
 
-  .circuit-item .border-button a {
-      padding: 8px 16px;
-      font-size: 14px;
-  }
+    .circuit-item .border-button a {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
 }
+
+/* 
 ---------------------------------------------
 Responsive Style
 --------------------------------------------- 
